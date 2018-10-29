@@ -31,19 +31,19 @@ var router =<Provider store={store}>
 						{/*发现页路由*/}
 							<Route path="/find" render={()=><Find>
 								<Switch>
-									<Route path="/news" component={News}></Route>
-									<Route path="/trailer" component={Trailer}></Route>
-									<Route path="/toplist" component={Toplis}></Route>
-									<Route path="/review" component={Review}></Route>
+									<Route path="/find/news" component={News}></Route>
+									<Route path="/find/trailer" component={Trailer}></Route>
+									<Route path="/find/toplist" component={Toplis}></Route>
+									<Route path="/find/review" component={Review}></Route>
 									<Redirect from="/find" to="/find/news"></Redirect>
 								</Switch>
 							</Find>}></Route>
 						{/*商城页路由*/}
 							<Route path="/market" render={()=><Market>
 								<Switch>
-									<Route path="/index" component={Mallindex}></Route>
-									<Route path="/list" component={List}></Route>
-									<Route path="/item" component={Item}></Route>
+									<Route path="/market/index" component={Mallindex}></Route>
+									<Route path="/market/list" component={List}></Route>
+									<Route path="/market/item" component={Item}></Route>
 									<Redirect from="/market" to="/market/index"></Redirect>
 								</Switch>
 							</Market>}></Route>
