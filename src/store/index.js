@@ -1,6 +1,8 @@
 import {createStore,combineReducers} from "redux"
-var reducer=combineReducers({
+import changefindGetRecommend from "./reducers/changefindGetRecommend"
 
+var reducer=combineReducers({
+	findGetRecommend:changefindGetRecommend
 })
 const store =createStore(reducer)
 export default store

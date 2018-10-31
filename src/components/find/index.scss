@@ -1,0 +1,11 @@
+#findnav{display:flex;text-align:center;background:#fff;list-style:none;line-height: 50px;
+	li{
+		flex:1;
+		a{text-decoration:none;color:#000;}
+	}
+}
+#findnav li .findactive{font-weight:600;color:blue;}
+#findtoTOP{display:none;
+	position:fixed;bottom:12%;right:10%;
+	i{font-size:40px;color:#aaa;}
+}

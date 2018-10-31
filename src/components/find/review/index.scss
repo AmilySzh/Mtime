@@ -1,0 +1,13 @@
+#findreview{
+	#findreviewlist{
+		li{
+			overflow:hidden;padding:5%;border-bottom:1px solid #ccc;
+			img{float:left;margin-right:5%;width:30%;}
+			h4{width: 60%;
+				float:left;
+				span{font-weight:100;color:#ccc;text-overflow:ellipsis;
+					white-space:nowrap;display:block;width:100%;overflow:hidden;}
+			}
+		}
+	}
+}

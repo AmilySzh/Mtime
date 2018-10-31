@@ -1,9 +1,19 @@
 *{padding:0;margin:0;}
+body,html{height:100%}
 #indexnav{
   display:flex;list-style:none;background:#000;height:50px;line-height:50px;text-align:center;
   li{
     flex:1;
-    a{text-decoration:none;color:#fff; font-weight:600}
+    a{text-decoration:none;color:#fff;display:block;}
+  }
+   li:nth-of-type(1){margin-left:5%;
+  	img{width:100%}
+  }
+  li:nth-of-type(4){position:relative;
+  	i{position:absolute;top:6%;right:-25%;color:red;line-height:20px;}
+  }
+  li:nth-of-type(6){
+  	i{color:#fff;font-size:25px;}
   }
 }
-#indexnav li .active{border-bottom:1px solid #fff}
+#indexnav li .active{font-weight:600;border-bottom:2px solid #fff;margin-top:-2px}
