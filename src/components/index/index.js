@@ -35,7 +35,7 @@ class Index extends Component{
 						  		<i className="i_block i_city"></i>
 				  			</div>
 				  			<p className="input">
-				  				<a href="#!/search/">
+				  				<a href="/#/search">
 				  				<span>影片/影院/影人，任你搜</span>
 				  				</a>
 				  			</p>
