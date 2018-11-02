@@ -14,13 +14,13 @@ class Search extends Component{
 	render(){
 		return(
 			<div>
-				<div className="header">
-					<i className="iconfont back" onClick={()=>{
+				<div id="header-search">
+					<i className="iconfont back1" onClick={()=>{
 						console.log(this.props)
 						this.props.prop.goBack()
 					}}>&#xe601;</i>
 					
-					<div className="input">
+					<div id="input">
 						<i className="iconfont search">&#xe60b;</i>
 						<input type="text" placeholder="搜索正版电影周边"/>
 					</div>

@@ -36,7 +36,7 @@ class Item extends Component{
 		  	)
 	  }
 
-		return(<div id="all">
+		return(<div id="alla">
 				<nav>
 					<i className="iconfont back"  onClick={()=>{
 						console.log(this.props)
@@ -111,7 +111,7 @@ class Item extends Component{
 
 
 				{/*猜你喜欢*/}
-				<div className="maybelike-title">
+				<div id="maybelike-title">
 					<i className="iconfont">&#xec1e;</i>
 					<span>你可能感兴趣的</span>
 				</div>
@@ -142,8 +142,8 @@ class Item extends Component{
 
 
 				{/*footer*/}
-				<footer>
-					<ul className="left">
+				<div id="footer-detail">
+					<ul id="left">
 						<li>
 							<i className="iconfont">&#xe69f;</i>
 							<span>咨询</span>
@@ -157,7 +157,7 @@ class Item extends Component{
 						<li><a href="">加入购物车</a></li>
 						<li><a href="">立即购买</a></li>
 					</ul>
-				</footer>
+				</div>
 
 
 			</div>)
