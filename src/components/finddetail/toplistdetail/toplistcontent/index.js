@@ -57,7 +57,7 @@ class Toplistcontent extends Component{
 	componentDidMount(){
 		document.querySelector("#finddetail #finddetailnav").style.display="none"
 		axios.get(`/Service/callback.mi/movie/Detail.api?movieId=${this.props.match.params.szh}&locationId=292&t=201811215952916`).then(res=>{
-			console.log(res.data)
+			// console.log(res.data)
 			this.setState({
 				topdetail:res.data
 			})
