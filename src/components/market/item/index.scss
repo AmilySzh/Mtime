@@ -1,4 +1,4 @@
-.all{
+#alla{
 	background-color: #f6f6f6;
 	position: relative;
 }
@@ -49,8 +49,7 @@ nav{
 	p.price{
 		margin-left: .2rem;
 		color:#ff8600;
-			height: .5rem;
-			line-height: .5rem;
+		margin-top: -.1rem;
 		span:first-of-type{
 			font-size: .25rem;
 		}
@@ -63,6 +62,7 @@ nav{
 	}
 	p.sale-price{
 		margin-left: .2rem;
+		margin-top: -.15rem;
 		color: #999;
 		span{
 			text-decoration: line-through;
@@ -70,6 +70,7 @@ nav{
 	}
 	p.desc{
 		margin-left:.2rem;
+		margin-top: -.1rem;
 		color: #f97a3e;
 		line-height: .3rem;
 		height: .4rem;
@@ -87,7 +88,7 @@ nav{
 	}
 	p.select{
 		height: .5rem;
-		line-height: .5rem;
+		line-height: .3rem;
 		padding-left: .2rem;
 		border-bottom: 0.01rem solid #ccc;
 		span{
@@ -135,11 +136,11 @@ div.loading{
 	color:#ff8600;
 }
 
-div.maybelike-title{
+#maybelike-title{
 	text-align: center;
 	background-color: #f6f6f6;
 	height: .5rem;
-	line-height: 0.01rem;
+	line-height: .5rem;
 	position: relative;
 	i{
 		font-size: .2rem;
@@ -155,7 +156,7 @@ div.maybelike-title{
 		z-index: 1;
 	}
 }
-div.maybelike-title::after{
+#maybelike-title::after{
 	content: "";
 	display: block;
     height: 0.01rem;
@@ -164,22 +165,22 @@ div.maybelike-title::after{
     position: absolute;
     left: 20%;
     right: 20%;
-    top: 66%;
+    top: 50%;
     width: 60%;
     z-index: 0
 }
 
 
-footer{
-	height: .5rem;
-	line-height: .5rem;
+#footer-detail{
+	height: .6rem;
+	line-height: .4rem;
 	display: flex;
 	font-size: .18rem;
 	position: fixed;
 	z-index: 10;
-	bottom:0;
+	bottom:-2.5%;
 	width: 100%;
-	ul.left{
+	#left{
 		width: 40%;
 		list-style: none;
 		display: flex;

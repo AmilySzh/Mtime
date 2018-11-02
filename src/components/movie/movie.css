@@ -1,7 +1,7 @@
 .mhead{
 	background: #1c2635;
-	height: 40px;
-	width: 93%;
+	height: 60px;
+	width: 100%;
 	padding:0 10px 15px 20px;
 }
 .onehead{
@@ -45,4 +45,7 @@
    background: #1c2635;
     color: #fff;
     
+}
+.uu{
+    margin-top: -20px;
 }

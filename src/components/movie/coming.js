@@ -37,7 +37,7 @@ class Coming extends Component{
 							<span className="ri">{item.rDay}日</span>
 							<img src={item.image}/>
 							<div className="hotrightt">
-								<b className="right1">{item.title}</b>				
+								<b id="right1">{item.title}</b>				
 								<span className="right33"> {item.wantedCount}人想看 - 动画</span>
 								<b className="right6">导演：{item.director}</b>
 								<span className="right71">超前预售</span>

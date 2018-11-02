@@ -21,7 +21,7 @@ class HeaderInput extends Component{
 		return(
 			<div className="outer">
 			{/*头部搜索框*/}
-				<header>
+				<div id="index-header">
 					<NavLink to="/market/search">
 						<div className="search" onClick={this.props.event}>
 							<i className="iconfont">&#xe60b;</i>
@@ -31,7 +31,7 @@ class HeaderInput extends Component{
 							<i className="iconfont">&#xe604;</i>
 						</div>
 					</NavLink>
-				</header>
+				</div>
 				{/*轮播*/}
 				<div className="swiper-container">
 				    <div className="swiper-wrapper">
@@ -50,11 +50,11 @@ class HeaderInput extends Component{
 				{/*小图标*/}
 
 				<main>
-					<ul>
+					<ul id="icon">
 						{
 							this.state.infoList ? 
 							this.state.infoList.navigatorIcon.map((item)=>
-								<li key={item.url} onClick={this.smart2list.bind(this,item.url)}>
+								<li id="icon-list" key={item.url} onClick={this.smart2list.bind(this,item.url)}>
 									<img src={item.image} alt=""/>
 									<p>{item.iconTitle}</p>
 								</li>
@@ -167,7 +167,7 @@ class HeaderInput extends Component{
 			}
 			
 				{/*猜你喜欢*/}
-				<div className="maybelike-title">
+				<div id="maybelike-title">
 					<i className="iconfont">&#xec1e;</i>
 					<span>你可能感兴趣的</span>
 				</div>

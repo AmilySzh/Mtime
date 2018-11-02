@@ -4,7 +4,7 @@ import Footer from "./footer.js"
 import "./Search.css"
 class Search extends Component{
 	render(){
-		return(<div>
+		return(<div className="iii">
 			<div className="header">
 					<div className="head_searchh">
 						<div className="table_v_cc">

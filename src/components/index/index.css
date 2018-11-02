@@ -14,6 +14,9 @@
 	margin-left: 5%;
 	padding-top: 10px;	
 }
+.iii{
+    margin-top: -20px;
+}
 .cityshow{
 	width: 60px;
 	height: 35px;
@@ -62,15 +65,15 @@
     margin: 0;
 }
 .indexmovie{
-	width: 90%;
-	height: 445px;
+	width: 100%;
+	height: 476px;
 	padding: 10px 20px 5px 10px;
 }
 .indexmovie h2 a {
     display: block;
     line-height: 2;
     color: #333;
-    height: 42px;
+    height: 50px;
     font-size: 22px;
 }
 .indexmovie h2 a i {
@@ -93,7 +96,7 @@ a{
 .indexmovie li {
     float: left;
     display: inline;
-    width: 22%;
+    width: 25%;
     text-align: center;
     position: relative;
     padding: 0 5px 20px 5px;
@@ -124,7 +127,7 @@ a{
     padding: 5px 0 0;
     width: 80px;
     margin-bottom: 10px;
-    height: 40px;
+    height: 50px;
     overflow: hidden;
     margin: auto;
 }
@@ -191,7 +194,7 @@ ul, ol {
 .table, .table_v, .table_v_c, .table_h_c, .table_vh_c {
     width: 100%;
     display: block;
-    height: 100px;
+    height: 90px;
     margin-top: -10px;
     border-bottom: 1px solid #ccc;
 }
@@ -228,9 +231,16 @@ ul, ol {
     display: block;
     line-height: 2;
 }
+.todayhot li .todaytxt p{
+    margin:0;
+}
+.todayhot li .todaytxt h2{
+     margin:0;
+}
 .todayhot li .todaytxt p span {
     font-size: 16px;
     color: #777;
+    margin-top:-20px;
 }
 .todayhot li .todaytxt p time {
     font-size: 1px;
@@ -247,4 +257,7 @@ ul, ol {
     width: 150px;
     height: 90px;
     float: left;
+}
+.indexmovie h2{
+    margin: 0;
 }

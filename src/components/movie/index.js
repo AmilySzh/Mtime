@@ -10,7 +10,7 @@ import "./coming.css"
 import Footer from "../index/footer.js"
 class Movie extends Component{
 	render(){
-		return(<div>
+		return(<div className="uu">
 				<div className="mhead">
 					<div className="onehead">
 						<a href="/#index" className="headback"></a>
