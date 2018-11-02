@@ -3,15 +3,18 @@ import {NavLink} from "react-router-dom"
 import './App.scss';
 import "./components/find/toplist/iconfont1/iconfont.css"
 class App extends Component {
+
+
   constructor(){
     super()
-    this.state={
- 
+    this.state= {
+      isShow:true
     }
   }
-  render() {
+
+render() {
     return (
-      <div>
+      <div> 
         <ul id="indexnav">
           <li><img src="/logo_mtime.png" alt=""/></li>
           <li><NavLink to="/index" activeClassName="active">首页</NavLink></li>
@@ -23,6 +26,7 @@ class App extends Component {
           <li><NavLink to="/find" activeClassName="active">发现</NavLink></li>
           <li><i className="iconfont icon-tubiaolunkuo-"></i></li>
         </ul>
+       
         {this.props.children}
       </div>
     );

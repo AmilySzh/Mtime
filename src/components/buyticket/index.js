@@ -5,6 +5,6 @@ class Buyticket extends Component{
 		return(<div>
 				Buyticket
 			</div>)
-	}Buyticket
+	}
 }
 export default connect()(Buyticket)

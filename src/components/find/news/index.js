@@ -17,7 +17,7 @@ class News extends Component{
 			<Findbanner GetRecommend={this.props.findGetRecommend.news}></Findbanner>
 			{this.state.list?<ul id="findnewlist">
 				{
-					this.state.list.map(item=><li key={item.id}>
+					this.state.list.map(item=><li key={item.id} onClick={this.Todetail.bind(this,item.id)}>
 						<div><img src={item.image} alt=""/></div>
 						<h4>
 							{item.title} <br/>
@@ -48,6 +48,9 @@ class News extends Component{
 				list:[...this.state.list,...res.data.newsList]
 			},()=>{console.log(this.state.pageIndex)})
 		})
+	}
+	Todetail(i){
+		this.props.history.push(`/finddetail/news/${i}`)
 	}
 }
 export default connect((state)=>{

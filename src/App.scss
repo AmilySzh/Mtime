@@ -1,7 +1,11 @@
 *{padding:0;margin:0;}
-body,html{height:100%}
+html,body{
+	height: 100%;
+	width:100%;
+	font-size: 26.66666vw;
+}
 #indexnav{
-  display:flex;list-style:none;background:#000;height:50px;line-height:50px;text-align:center;
+  display:flex;list-style:none;background:#000;height:50px;line-height:50px;text-align:center;font-size: .18rem;
   li{
     flex:1;
     a{text-decoration:none;color:#fff;display:block;}

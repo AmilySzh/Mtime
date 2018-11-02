@@ -1,8 +1,14 @@
-import {createStore,combineReducers} from "redux"
-import changefindGetRecommend from "./reducers/changefindGetRecommend"
+import {createStore,combineReducers,applyMiddleware} from "redux"
+import smartReducer from './reducers/smartReducer'
+
+import reduxThunk from 'redux-thunk'
+import changefindGetRecommen from "./reducers/changefindGetRecommend"
 
 var reducer=combineReducers({
-	findGetRecommend:changefindGetRecommend
+	smartReducer})
+
+var reducer=combineReducers({
+	findGetRecommend:changefindGetRecommen
 })
-const store =createStore(reducer)
+const store =createStore(reducer,applyMiddleware(reduxThunk))
 export default store

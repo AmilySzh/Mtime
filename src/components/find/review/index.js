@@ -4,6 +4,7 @@ import Findbanner from "../findbanner"
 import Findfooter from "../findfooter"
 import axios from "axios"
 import "./index.scss"
+import "../toplist/iconfont1/iconfont.css"
 class Review extends Component{
 	constructor(){
 		super();
@@ -17,7 +18,7 @@ class Review extends Component{
 			{this.state.list?<ul id="findreviewlist">
 				{
 					this.state.list.map(item=><li key={item.id}>
-						<img src={item.coverImg} alt=""/>
+						<div><img src={item.coverImg} alt=""/> <i className="iconfont icon-you"></i></div>
 						<h4>{item.movieName} <br/> <span>{item.summary}</span></h4>
 					</li>)
 				}

@@ -1,0 +1,24 @@
+/*购买须知*/
+#xuzhi{
+	background-color: #fff;
+	font-size: .2rem;
+	color: #999;
+	padding: .1rem .2rem;
+	.infotext{
+		dt{
+			font-weight: 600;
+		}
+		dd{ 
+			font-size: .16rem;
+			margin-top: .1rem;
+		}
+	}
+	
+}
+
+.detail{
+	img{
+		width: 100%;
+		display: block;
+	}
+}
