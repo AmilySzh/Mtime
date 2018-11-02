@@ -1,0 +1,86 @@
+.hot{
+	width: 95%;
+	height:auto;
+	padding-left: 5%;
+}
+.hot ul{
+	width: 100%;
+	height: auto;
+	padding:10px 0;
+}
+ul,li{
+	list-style: none;
+}
+.hot ul li{
+	width: 100%;
+	height: 120px;
+	border-bottom: 1px solid #ccc;
+	padding:15px 0;
+}
+.hot ul li img{
+	width: 80px;
+	height: 120px;
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+}
+.hotright{
+	display: inline-block;
+	width: 70%;
+	height: 120px;
+	float: left;
+	position: relative;
+}
+.right1{
+	font-size: 20px;
+	color: #000;
+	margin-right: 3px;
+}
+.right2{
+	font-size: 14px;
+	color: #fff;
+	background-color: green
+}
+.right3{
+	font-size: 16px;
+	color: green;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 5px 0;
+	margin-left: -5px;
+}
+.right4 {
+    width: 20px;
+    height: 20px;
+    background: url(https://static1.mtime.cn/html5/20180917192829/images/2014/ia_cine_05.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.right5 {
+    width: 45px;
+    height: 20px;
+    background: url(https://static1.mtime.cn/html5/20180917192829/images/2014/ia_cine_15.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.right6 {
+	color: #555;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.right7{
+	background: #ff8600;
+    color: #fff;
+    border-radius: 70px;
+    width: 40px;
+    height: 26px;
+    padding: 6px 30px;
+	position: absolute;
+	right:0px;
+	bottom: 0px;
+}

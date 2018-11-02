@@ -7,6 +7,8 @@ import App from "../App"
 import Index from "../components/index"
 import Search from "../components/index/Search.js"
 import Movie from "../components/movie"
+import Hot from "../components/movie/hot.js"
+import Coming from "../components/movie/coming.js"
 
 import Buyticket from "../components/buyticket"
 
@@ -26,8 +28,15 @@ var router =<Provider store={store}>
 						<Switch>
 						{/*首页路由*/}
 							<Route path="/index" component={Index}></Route>
-							<Route path="/search" component={Search}></Route>
-							<Route path="/movie" component={Movie}></Route>
+							<Route path="/search" component={Search}></Route>						
+							<Route path="/movie" render={()=>
+								<Movie>
+								<Switch>
+									<Route path="/movie/hot" component={Hot}/>
+									<Route path="/movie/coming" component={Coming}/>
+								</Switch>
+								</Movie>
+							}/>
 						{/*购票页路由*/}  
 							<Route path="/buyticket" component={Buyticket}></Route>
 						{/*发现页路由*/}
@@ -51,6 +60,7 @@ var router =<Provider store={store}>
 							</Market>}></Route>
 
 							<Redirect from="*" to="/index"></Redirect>
+							
 						</Switch>
 					</App>
 				</Router>

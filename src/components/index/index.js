@@ -44,7 +44,7 @@ class Index extends Component{
 				
 				  <div className="indexmovie">
 				  	<h2>
-				  		<a href="#!/home/hot/">
+				  		<a href="/#/movie/hot">
 				  			<i className="iconfont icon-dayuhao"></i>
 				  			<b>正在热映（62部）</b> 
 				  		</a>
@@ -68,7 +68,7 @@ class Index extends Component{
 				  	}				  
 				  	</ul>
 				  	<h2>
-				  		<a href="#!/home/hot/">
+				  		<a href="/#/movie/coming">
 				  			<i className="iconfont icon-dayuhao"></i>
 				  			<b>即将上映（60部）</b> 
 				  		</a>

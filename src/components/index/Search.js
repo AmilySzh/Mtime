@@ -8,7 +8,7 @@ class Search extends Component{
 			<div className="header">
 					<div className="head_searchh">
 						<div className="table_v_cc">
-							<a className="h_btn_back"></a>
+							<a className="h_btn_back" href="/#index"></a>
 							<input className="searchText" type="text" className="td" placeholder="影片/影院/影人，任你搜"/>
 							<a className="i_search_clear"></a>
 							<a className="searchBtn" className="b_search"><span>搜索</span></a>
