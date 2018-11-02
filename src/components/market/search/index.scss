@@ -1,16 +1,17 @@
-.header{
+#header-search{
 	height: .5rem;
 	line-height: .5rem;
 	background-color: #000;
 	font-size: .12rem;
 	display: flex;
 	justify-content: space-around;
-	i.back{
+	i.back1{
 		color:#fff;
 	}
-	div.input{
+	#input{
 		height: .35rem;
-		margin-top: 0.08rem;
+		line-height: .35rem;
+		margin-top: 0.1rem;
 		background-color: #fff;
 		border-radius: 0.05rem;
 		input{
