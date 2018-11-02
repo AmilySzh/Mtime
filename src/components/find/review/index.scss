@@ -1,9 +1,17 @@
 #findreview{
 	#findreviewlist{
 		li{
-			overflow:hidden;padding:5%;border-bottom:1px solid #ccc;
-			img{float:left;margin-right:5%;width:30%;}
-			h4{width: 60%;
+			overflow:hidden;padding:5%;border-bottom:1px solid #ccc;line-height:26px;
+			div{
+				float:left;margin-right:5%;width:45%;height:90px;overflow:hidden;
+				img{width:100%;}
+				i{
+					display:block;position:relative;height:30px;width:30px;color:#fff;
+					top:-80%;left:75%;font-size:30px;border:2px solid #fff;border-radius:50%;
+					line-height:30px;text-align:center;
+				}
+			}
+			h4{width: 50%;
 				float:left;
 				span{font-weight:100;color:#ccc;text-overflow:ellipsis;
 					white-space:nowrap;display:block;width:100%;overflow:hidden;}

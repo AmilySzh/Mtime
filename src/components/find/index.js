@@ -31,13 +31,15 @@ class Find extends Component{
 		})
 		// toTop标记的显示隐藏
 		window.onscroll=function(){
-			var distance=document.querySelector("#find #list li:nth-of-type(7)").offsetTop
-			if(document.documentElement.scrollTop>=distance){
+			if(document.documentElement.scrollTop>=1000){
 				document.querySelector("#findtoTOP").style.display="block"
 			}else{
 				document.querySelector("#findtoTOP").style.display="none"
 			}
 		}
+	}
+	componentWillUnmount(){
+		window.onscroll=null;
 	}
 	// 平滑toTop
 	toTop(){

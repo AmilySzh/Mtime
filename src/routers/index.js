@@ -14,6 +14,11 @@ import News from "../components/find/news"
 import Trailer from "../components/find/trailer"
 import Toplis from "../components/find/toplist"
 import Review from "../components/find/review"
+import Finddetail from "../components/finddetail"
+import Newsdetail from "../components/finddetail/newsdetail"
+import Toplistdetail from "../components/finddetail/toplistdetail"
+import Toplistcontent from "../components/finddetail/toplistdetail/toplistcontent"
+import Trailerdet from "../components/finddetail/trailerdetail"
 
 import Market from "../components/market"
 import Mallindex from "../components/market/mallindex"
@@ -37,7 +42,15 @@ var router =<Provider store={store}>
 									<Route path="/find/review" component={Review}></Route>
 									<Redirect from="/find" to="/find/news"></Redirect>
 								</Switch>
-							</Find>}></Route>
+							</Find>}></Route> 
+							<Route path="/finddetail" render={(props)=><Finddetail {...props}>
+								<Switch>
+									<Route path="/finddetail/news/:szh" component={Newsdetail}></Route>
+									<Route path="/finddetail/toplist/:szh" component={Toplistdetail}></Route>
+									<Route path="/finddetail/detail/:szh" component={Toplistcontent}></Route>
+									<Route path="/finddetail/trailer/:szh" component={Trailerdet}></Route>
+								</Switch>
+							</Finddetail>}></Route>
 						{/*商城页路由*/}
 							<Route path="/market" render={()=><Market>
 								<Switch>

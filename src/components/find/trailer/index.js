@@ -17,7 +17,7 @@ class Trailer extends Component{
 			{
 				this.state.list?<ul id="findtrailerlist">
 					{
-						this.state.list.map(item=><li key={item.id}>
+						this.state.list.map(item=><li key={item.id} onClick={this.Todetail.bind(this,item.id)}>
 							<h3>{item.title}</h3>
 							<p>
 								<img src={item.userImage} alt=""/>
@@ -42,6 +42,9 @@ class Trailer extends Component{
 
 		})
 		
+	}
+	Todetail(i){
+		this.props.history.push(`/finddetail/trailer/${i}`)
 	}
 }
 export default connect((state)=>{

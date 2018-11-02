@@ -23,7 +23,7 @@ class Toplist extends Component{
 				<li><i className="iconfont icon-yeji"></i> <br/> 全球票房榜</li>
 			</ul>
 			{this.state.list?<ul id="topList">
-				{this.state.list.map(item=><li key={item.id}>
+				{this.state.list.map(item=><li key={item.id} onClick={this.Todetail.bind(this,item.id)}>
 					<h3>{item.topListNameCn}</h3>
 					<p>{item.summary}</p>
 					<span><i className="iconfont icon-you"></i></span>
@@ -49,6 +49,9 @@ class Toplist extends Component{
 				list:[...this.state.list,...res.data.topLists]
 			},()=>{console.log(this.state.pageIndex)})
 		})
+	}
+	Todetail(i){
+		this.props.history.push(`/finddetail/toplist/${i}`)
 	}
 }
 export default connect((state)=>{
