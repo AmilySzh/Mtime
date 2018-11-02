@@ -25,7 +25,7 @@ import Market from "../components/market"
 import Mallindex from "../components/market/mallindex"
 import List from "../components/market/list"
 import Item from "../components/market/item"
-import Search from "../components/market//search"
+import Searchinput from "../components/market/search"
 
 
 var router =<Provider store={store}>
@@ -63,7 +63,7 @@ var router =<Provider store={store}>
 										<Route path="/market/index" component={Mallindex}></Route>
 										<Route path="/market/list/:info" component={List}></Route>
 										<Route path="/market/item/:id" component={Item}></Route>
-										<Route path="/market/search" component={Search}></Route>
+										<Route path="/market/search" component={Searchinput}></Route>
 										<Redirect from="/market" to="/market/index"></Redirect>
 									</Switch>
 								</Market>}>

@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom"
 import './App.scss';
 import "./components/find/toplist/iconfont1/iconfont.css"
 class App extends Component {
-<<<<<<< HEAD
+
 
   constructor(){
     super()
@@ -12,15 +12,7 @@ class App extends Component {
     }
   }
 
-=======
-  constructor(){
-    super()
-    this.state={
- 
-    }
-  }
->>>>>>> 21c83654e4f213532217a9a8d88fe4484151f1d1
-  render() {
+render() {
     return (
       <div> 
         <ul id="indexnav">
