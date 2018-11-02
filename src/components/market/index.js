@@ -1,11 +1,23 @@
 import React,{Component} from "react"
 import {connect} from "react-redux"
+import './index.scss'
+
 class Market extends Component{
-	render(){
-		return(<div>
-				Market
-				{this.props.children}
-			</div>)
+	constructor(){
+		super()
+		this.state = {
+			
+		}
 	}
+
+	render(){
+		return(
+			<div>
+				{this.props.children}
+			</div>
+			)
+	}
+
+	
 }
 export default connect()(Market)

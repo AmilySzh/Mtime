@@ -1,0 +1,14 @@
+html,body{height:100%}
+#finddetail{
+	#finddetailnav{width:100%;
+		height:50px;line-height:50px;background:#000;color:#fff;
+		text-indent:1em;display:flex;
+		i{font-size:30px;flex:1;}
+		i:nth-of-type(2){text-align:right;padding-right:1em}
+	}
+	#findtoTOP{display:none;
+		position:fixed;bottom:12%;right:10%;
+		i{font-size:40px;color:#aaa;}
+	}
+	.Drawer{img{width:30%}}
+}

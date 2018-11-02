@@ -1,0 +1,7 @@
+#findbanner{
+	div{position:relative;
+		img{display:block;width:100%;}
+		span{display:block;position:absolute;left:0;bottom:0;width:100%;font-weight:600;
+			line-height:50px;text-align:center;background:rgba(0,0,0,.5);color:#fff;font-size:18px}
+	}
+}

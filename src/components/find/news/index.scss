@@ -1,0 +1,14 @@
+#findnew{
+	#findnewlist{
+		li{overflow:hidden;border-bottom:1px solid #ccc;padding:5%;
+			div{float:left;width:25%;height:80px;margin-right:5%;overflow: hidden;
+				img{display:block;transform:scale(0.3) translate(-130%,-130%);}
+			}
+			h4{
+				float:left;width:65%;
+				span{color:#ccc;font-weight:100}
+			}	
+		}
+	}
+	#morenewlist{line-height:40px;text-align:center;color:blue;}
+}

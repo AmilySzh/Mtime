@@ -1,0 +1,77 @@
+.footer {
+    background: #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+}
+.link {
+    background: #fff;
+     margin-top: -25px;
+}
+.link ul{
+   height: 60px;
+   border-bottom: 1px solid #f6f6f6;
+
+}
+.link li {
+    float: left;
+    width: 20%;
+    height: 60px;
+}
+.link li a {
+    display: block;
+    text-align: center;
+    padding: 16px 0 14px;
+}
+.link a span {
+    color: #0074c5;
+    font-size: 18px;
+}
+.footlink{
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+}
+.footlink ul{
+	height: 30px;
+	list-style: none;
+	border-bottom: 1px solid #f6f6f6;
+}
+.footlink li{
+	float: left;
+	height: 30px;
+} 
+.footlink li a{	
+	height: 30px;
+	padding:5px 15px; 
+	color: #333;
+	border-right: 1px solid #ddd;
+} 
+.copy{
+	width: 100%;
+	height: 70px;
+}
+.footer .copy p {
+    color: #cdcdcd;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.footer .copy p:first-child span {
+    background: url(https://static1.mtime.cn/html5/20180917192829/images/2014/fot_logo.png) no-repeat center center;
+    background-size: auto 26px;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer .copy .honest {
+    font-size: 0;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    background: url(https://static1.mtime.cn/html5/20180917192829/images/h_mark.jpg) no-repeat;
+    background-size: cover;
+}
+.footer .copy p span {
+    font-size: 12px;
+}

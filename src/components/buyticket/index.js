@@ -118,6 +118,7 @@ class Buyticket extends Component{
 
 			</div>)
 
+
 	}
 
 	componentDidMount(){
@@ -132,6 +133,9 @@ class Buyticket extends Component{
 	toTime(i){
 		this.props.history.push(`/time/${i}`)
 	}
+
+
+
 
 
 }
