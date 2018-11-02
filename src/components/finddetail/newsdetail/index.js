@@ -18,12 +18,11 @@ class Newsdetail extends Component{
 					    {this.state.newsdata.images.map(item=><div className="swiper-slide" key={item.gId}>
 					    	<img src={item.url1} alt=""/>
 					    	<span>{item.desc}</span>
+					    	<div className="swiper-button-next"></div>
+					    <div className="swiper-button-prev"></div>
 					    	</div>)
 					    }
-					    </div>
-
-					    <div className="swiper-button-next"></div>
-					    <div className="swiper-button-prev"></div>
+					    </div> 
 					</div>
 					<div className="detailcontent">
 						<h2>{this.state.newsdata.title}</h2>

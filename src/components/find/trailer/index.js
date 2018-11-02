@@ -37,7 +37,7 @@ class Trailer extends Component{
 	}
 	componentDidMount(){
 		axios.get("/Service/callback.mi/MobileMovie/Review.api?needTop=false&t=2018103018532799516").then(res=>{
-			console.log(res.data)
+			// console.log(res.data)
 			this.setState({list:res.data})
 
 		})

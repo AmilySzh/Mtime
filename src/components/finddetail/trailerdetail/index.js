@@ -32,7 +32,7 @@ class Trailerdet extends Component{
 	}
 	componentDidMount(){
 		axios.get(`/Service/callback.mi/Review/Detail.api?reviewId=${this.props.match.params.szh}&t=201811119375992348`).then(res=>{
-			console.log(res.data)
+			// console.log(res.data)
 			this.setState({
 				trailerdata:res.data
 			})

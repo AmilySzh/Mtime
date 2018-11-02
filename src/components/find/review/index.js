@@ -28,7 +28,7 @@ class Review extends Component{
 	}
 	componentDidMount(){
 		axios.get('/Service/callback.mi/PageSubArea/TrailerList.api?t=2018103014494948193').then(res=>{
-			console.log(res.data.trailers)
+			// console.log(res.data.trailers)
 			this.setState({list:res.data.trailers})
 		})
 	}

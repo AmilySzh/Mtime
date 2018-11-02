@@ -83,7 +83,7 @@ class Finddetail extends Component{
     this.setState({
       visible: true,
     });
-    console.log("showDrawer")
+    // console.log("showDrawer")
   };
 
   onClose = () => {

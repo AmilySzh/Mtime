@@ -35,7 +35,7 @@ class Toplist extends Component{
 	}
 	componentDidMount(){
 		axios.get(`/Service/callback.mi/TopList/TopListOfAll.api?t=2018103015454631516&pageIndex=${this.state.pageIndex}`).then(res=>{
-			console.log(res.data.topLists)
+			// console.log(res.data.topLists)
 			this.setState({
 				pageIndex:this.state.pageIndex+1,
 				list:res.data.topLists

@@ -34,7 +34,7 @@ class News extends Component{
 	}
 	componentDidMount(){
 		axios.get(`/Service/callback.mi/News/NewsList.api?t=2018103013101841136&pageIndex=${this.state.pageIndex}`).then(res=>{
-			console.log(res.data.newsList)
+			// console.log(res.data.newsList)
 			this.setState({
 				pageIndex:this.state.pageIndex+1,
 				list:res.data.newsList

@@ -91,10 +91,12 @@ class Item extends Component{
 									选择颜色
 									<span>尺码</span>
 								</p>
+								<i className="iconfont right">&#xe634;</i>
 							</div>
 							:null
 					}
 
+				{/*评价*/}
 					<div id="pingjia">
 						<h2></h2>
 						<div></div>
