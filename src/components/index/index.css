@@ -6,6 +6,7 @@
 	text-align: center;
 	background: #f6f6f6;
 	border-bottom: 1px solid #d8d8d8;
+    margin-top: -20px;
 }
 .hea_search{
 	width: 90%;
@@ -66,7 +67,7 @@
 }
 .indexmovie{
 	width: 100%;
-	height: 476px;
+	height: 490px;
 	padding: 10px 20px 5px 10px;
 }
 .indexmovie h2 a {
