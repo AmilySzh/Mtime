@@ -1,0 +1,48 @@
+header{
+	height: .5rem;     
+	width: 100%;
+	font-size: .16rem;
+	display: flex;
+	background-color: #f6f6f6;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 0.08rem .1rem;
+	a{
+		text-decoration: none;
+	}
+	div.search{
+		font-size: .14rem;
+		height: .34rem;
+		line-height: .34rem;
+		width: 3rem;
+		background-color: #fff;
+		border-radius: 0.05rem;
+		margin-left: 0.05rem;
+		float: left;
+		i{
+			font-size: .25rem;
+			padding-left: .1rem;
+			color:#ccc;
+		}
+		span{
+			/*background-color: #f60;*/
+			height: .34rem;
+			line-height: .22rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: .1rem;
+			color: #777;
+			font-size: .18rem;
+		}
+	}
+	div.cart{
+		float: left;
+		i{
+			font-size: .3rem;
+			color:blue;
+			margin-left: 0.1rem;
+
+		}
+		
+	}
+}

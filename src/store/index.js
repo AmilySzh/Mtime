@@ -1,6 +1,10 @@
-import {createStore,combineReducers} from "redux"
-var reducer=combineReducers({
+import {createStore,combineReducers,applyMiddleware} from "redux"
+import smartReducer from './reducers/smartReducer'
 
+import reduxThunk from 'redux-thunk'
+
+var reducer=combineReducers({
+	smartReducer
 })
-const store =createStore(reducer)
+const store =createStore(reducer,applyMiddleware(reduxThunk))
 export default store

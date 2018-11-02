@@ -19,6 +19,9 @@ import Market from "../components/market"
 import Mallindex from "../components/market/mallindex"
 import List from "../components/market/list"
 import Item from "../components/market/item"
+import Search from "../components/market//search"
+
+
 var router =<Provider store={store}>
 				<Router>
 					<App>
@@ -39,14 +42,17 @@ var router =<Provider store={store}>
 								</Switch>
 							</Find>}></Route>
 						{/*商城页路由*/}
-							<Route path="/market" render={()=><Market>
-								<Switch>
-									<Route path="/market/index" component={Mallindex}></Route>
-									<Route path="/market/list" component={List}></Route>
-									<Route path="/market/item" component={Item}></Route>
-									<Redirect from="/market" to="/market/index"></Redirect>
-								</Switch>
-							</Market>}></Route>
+							<Route path="/market"  render={(props)=>
+								<Market {...props}>
+									<Switch>
+										<Route path="/market/index" component={Mallindex}></Route>
+										<Route path="/market/list/:info" component={List}></Route>
+										<Route path="/market/item/:id" component={Item}></Route>
+										<Route path="/market/search" component={Search}></Route>
+										<Redirect from="/market" to="/market/index"></Redirect>
+									</Switch>
+								</Market>}>
+							</Route>
 
 							<Redirect from="*" to="/index"></Redirect>
 						</Switch>

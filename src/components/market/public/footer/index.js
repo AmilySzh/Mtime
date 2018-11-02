@@ -1,10 +1,10 @@
 import React,{Component} from "react"
 import {connect} from "react-redux"
-class Buyticket extends Component{
+class Footer extends Component{
 	render(){
 		return(<div>
-				Buyticket
+				Footer
 			</div>)
 	}
 }
-export default connect()(Buyticket)
+export default connect()(Footer)
