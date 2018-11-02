@@ -5,6 +5,7 @@ import store from "../store"
 import App from "../App"
 
 import Index from "../components/index"
+import Search from "../components/index/Search.js"
 import Movie from "../components/movie"
 
 import Buyticket from "../components/buyticket"
@@ -30,6 +31,7 @@ var router =<Provider store={store}>
 						<Switch>
 						{/*首页路由*/}
 							<Route path="/index" component={Index}></Route>
+							<Route path="/search" component={Search}></Route>
 							<Route path="/movie" component={Movie}></Route>
 						{/*购票页路由*/}  
 							<Route path="/buyticket" component={Buyticket}></Route>
