@@ -227,5 +227,8 @@ class Item extends Component{
 		})
 	}
 
+	componentWillUnmount(){
+		window.onscroll=null
+	}
 }
 export default connect()(Item)

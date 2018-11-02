@@ -1,0 +1,21 @@
+#trailer{
+	.head{padding:5%;position:relative;border-bottom:1px solid #ccc;
+		h1{margin-bottom:8%}
+		.user{
+			overflow:hidden;
+			img{float:left;width:15%;border-radius:50%;margin-right:5%}
+			p{
+				float:left;width:70%;font-size:14px;
+				span{color:#ccc;}
+				b{font-weight:100;color:#fff;background:#659d0e;padding:1%;}
+			}
+		}
+		.movielogo{position:absolute;bottom:-15%;right:5%;width:20%}
+	}
+	.time{color:#ccc;line-height:30px;font-size:14px;text-indent:1em}
+	.content{
+		padding:5%;font-size:14px;
+		img{width:100%}
+	}
+
+}
