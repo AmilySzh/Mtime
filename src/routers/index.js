@@ -9,6 +9,7 @@ import Search from "../components/index/Search.js"
 import Movie from "../components/movie"
 
 import Buyticket from "../components/buyticket"
+import Time from "../components/time"
 
 import Find from "../components/find"
 import News from "../components/find/news"
@@ -25,7 +26,9 @@ import Market from "../components/market"
 import Mallindex from "../components/market/mallindex"
 import List from "../components/market/list"
 import Item from "../components/market/item"
+
 import Searchinput from "../components/market/search"
+
 
 
 var router =<Provider store={store}>
@@ -38,6 +41,8 @@ var router =<Provider store={store}>
 							<Route path="/movie" component={Movie}></Route>
 						{/*购票页路由*/}  
 							<Route path="/buyticket" component={Buyticket}></Route>
+						{/*购票页店面跳转*/}
+							<Route path="/time/:dora" component={Time}></Route>
 						{/*发现页路由*/}
 							<Route path="/find" render={()=><Find>
 								<Switch>
